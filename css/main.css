@@ -16,6 +16,9 @@ html, body {
   	min-height: 100%;
   /* equal to footer height */
     margin-bottom: -80px; 
+	
+	/*TEST REMOVE*/
+    background: pink;
 }
 
 #wrapper:after {
