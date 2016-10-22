@@ -1,0 +1,293 @@
+/****************************************
+GENERAL
+****************************************/
+* {
+  margin: 0;
+}
+
+html, body {
+	height: 100%;
+}
+
+#wrapper {
+	max-width: 90%;
+	margin: 0 auto;
+	padding: 0.5% 5%;
+  	min-height: 100%;
+  /* equal to footer height */
+    margin-bottom: -80px; 
+}
+
+#wrapper:after {
+  content: "";
+  display: block;
+}
+
+/* links */
+a {
+	text-decoration: none;
+	color: #999;
+}
+
+a:hover {
+	color: #555;
+}
+
+img {
+	max-width: 100%;
+}
+
+
+
+/****************************************
+HEADING
+****************************************/
+
+header {
+	float: left;
+	margin: 0 0 15px 0;
+	padding: 15px 0 0 0;
+	width: 100%;
+	
+}
+
+h1 {
+	text-align: center;
+	padding-top: 1em;
+	margin-top: 0;
+}
+
+#logo h2 {
+	text-align: center;
+}
+
+h3 {
+	margin:	1.2em 0 1em 0;
+}
+
+/****************************************
+NAVIGATION BAR
+****************************************/
+
+nav {
+	padding: 10px 0 10px 7.5%;
+	margin: 20px 0 0px; 
+
+
+}
+
+nav ul {
+	padding: 3px;
+	list-style: none;
+	margin: 0 10px;
+}
+
+nav ul li {
+	padding: 0 5px 0px;
+	display: inline-block;
+	}
+
+nav a {
+	font-weight: 700;
+	padding: 4px 4px;
+}
+
+
+/****************************************
+GALLERY
+****************************************/
+
+/* remove list bullets */
+.gallery {
+	list-style: none;
+}
+
+/* photo gallery */
+.gallery li {
+	float: left;
+	width: 40%;
+	margin: 2.5%;
+}
+
+.gallery img {
+	/*border-radius: 100%;*/
+	width: 30vw;
+	height: 30vw;
+	display: block;
+	margin: 0 auto;
+	border: darkgrey solid 1px;
+}
+
+
+.gallery li:nth-child(2n + 1) {
+	clear: left;
+}
+
+/* images descriptions */
+.gallery li p {
+	width: 18vw;
+	font-size: 0.8em;
+	text-align: center;
+	margin: 3vw auto;
+	padding: 5%;
+
+}
+
+.gallery li:hover {
+	transition-duration: 1.2s;
+	transform: scale(1.04);
+}
+
+
+
+/****************************************
+FOOTER
+****************************************/
+
+footer {
+	text-align: center;
+	padding-top: 2em;
+	padding-bottom: .5em;
+	font-size: 0.75em;
+	clear:both;
+	width: 100%;
+	margin: 0 0;
+}
+
+.social-icon {
+	width: 3%;
+	margin: 0 5px;
+}
+
+footer, #wrapper:after {
+  /* .push must be the same height as footer */
+    height: 80px; 
+}
+
+
+
+/****************************************
+PAGE: ABOUT
+****************************************/
+
+.profile-picture {
+	max-width: 15%;
+	display: block;
+	margin: 0 auto 10px;
+	border-radius: 100%;
+}
+
+
+
+/****************************************
+PAGE: CONTACT
+****************************************/
+
+.contact-info {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	font-size: 0.9em;
+}
+
+.contact-info li.phone-info a {
+	background-image: url("../img/phone.png");
+}
+
+.contact-info li.mail-info a {
+	background-image: url("../img/mail.png");
+}
+
+.contact-info li.twitter-info a {
+	background-image: url("../img/twitter.png");
+}
+
+.contact-info li a{
+	padding-left: 30px;
+	min-height: 20px;
+	display: block;
+	background-repeat: no-repeat;
+	background-size: 20px 20px;
+	margin-bottom: 10px;
+}
+
+
+
+/****************************************
+COLORS
+****************************************/
+
+body {
+	background: #fff;
+	color: #666;
+}
+
+/* blue header */
+header {
+	background-color: #090909;
+	border-color: #cc6600;
+}
+
+/* logo text */
+#logo {
+	color:#fff;
+}
+
+nav{
+	background: #666366;
+}
+
+/* nav links */
+nav a , nav a:visited {
+	color:#fff;	
+}
+
+/* nav hover */
+nav a.active_page, nav a:hover {
+	color:#1E1C1C;
+}
+
+/* photos descriptions */
+.gallery li p {
+	background-color: #3B3737;
+	color: #fff;
+}
+
+footer {
+	background: #3D3C3D;
+}
+
+
+
+/****************************************
+FONTS
+****************************************/
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+/* logo font */
+h1 {
+	/*font-family: 'Open Sans', sans-serif;*/
+	font-family: 'Quicksand', sans-serif;
+	font-size: 1.75em
+	margin: 15px 0;
+	font-weight: 300;
+	line-height: 0.8em;
+}
+
+h2 {
+	font-weight: normal;
+	line-height: 0.8em;
+	margin: -5px 0 0;
+	font-size: 0.9em
+}
+
+nav {
+	font-size: 0.9em;
+}
+
+.portfolio_desc {
+	font-family: 'Abhaya Libre', serif;
+}
