@@ -55,6 +55,7 @@ h1 {
 	text-align: center;
 	padding-top: 1em;
 	margin-top: 0;
+	display: inline-block;
 }
 
 #logo h2 {
