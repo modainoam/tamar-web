@@ -1,0 +1,109 @@
+@media screen and (min-width: 480px) {
+
+
+	/****************************************
+	SPLIT-2 LAYOUT
+	****************************************/
+
+	#primary {
+		width:50%;
+		float:left;
+	}
+
+	#secondary {
+		width:40%;
+		float: right;
+	}
+	/****************************************
+	PAGE: PORTFOLIO
+	****************************************/
+
+	/* photo gallery */
+	.gallery li {
+		float: left;
+		width: 30%;
+		margin: 1.5%;
+	}
+
+	/* disable 2-images layout */
+	.gallery li:nth-child(2n + 1) {
+			clear: none;
+		}
+	
+
+	.gallery li:nth-child(3n + 1) {
+		clear: left;
+	}
+
+	.gallery img {
+	width: 20vw;
+	height: 20vw;
+	}
+}
+
+
+@media screen and (min-width: 660px) {
+	
+	/****************************************
+	HEADER
+	****************************************/
+
+	header {
+		border-bottom: solid 3px #444;
+		margin-bottom: 50px;
+	}
+
+	header nav {
+		float:right;
+		background: none;
+		width: 35%;
+		margin: 4.5em 7.5% 1em 0;
+		padding: 0px; 
+		text-align: right;
+	}
+
+	nav a {
+		padding: 10px;
+	}
+
+
+	#logo {
+		float:left;
+		text-align: left;
+		width: 50%;
+		margin-bottom: 20px;
+		margin-left: 7.5%;
+		padding-left: 0;
+	}
+
+	#logo h2, h1 {
+		text-align: left;
+		margin-left: 10%;
+	}
+
+	/****************************************
+	PAGE: CONTACT
+	****************************************/
+	
+	.profile-picture {
+		float: left;
+		margin-right: 5%;
+		margin-bottom: 80px;
+	}
+
+
+
+	/****************************************
+	COLORS
+	****************************************/
+
+
+	/* nav hover */
+	nav a.active_page, nav a:hover {
+		color: #666366;
+	}
+}
+
+
+
+	
