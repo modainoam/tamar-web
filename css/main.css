@@ -7,6 +7,7 @@ GENERAL
 
 html, body {
 	height: 100%;
+	line-height: 1.5;
 }
 
 #wrapper {
@@ -87,6 +88,11 @@ nav ul li {
 	padding: 0 5px 0px;
 	display: inline-block;
 	}
+
+/* Adds links separation */
+nav ul li:nth-child(n + 2){
+	border-left: lightgrey dotted 2px;
+}
 
 nav a {
 	font-weight: 700;
